@@ -1,0 +1,18 @@
+import random
+x=random.randint(1,100)
+print('Я загадал число от 1 до 100 , попытайтесь угадать.Вводите ваше число в терминал:')
+flag=False
+j=0
+while flag==False and j<10:
+    a=int(input())
+    if a<x:
+        print('Неверно, загаданное число больше')
+    elif x<a:
+        print('Неверно, загаданное число меньше')
+    else:
+        print('Верно!')
+        flag=True
+    j+=1
+if flag==False and j>=0:
+    print('К сожалению, вы не угадали :(, загаданное число-',x)
+        
