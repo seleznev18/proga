@@ -1,0 +1,8 @@
+a,b=map(int,input('Введите наименьшее и наибольшее число диапазона:').split())
+if b<=a:
+    a,b=b,a
+arr=[]
+for i in range(a,b+1):
+    if i%2!=0:
+        arr.append(i)
+print('Нечетные числа этого диапазона:',arr)
